@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Jetro Design</title>
+</head>
+
+<body>
+    <header id="myHeader">
+        <div class="container flex">
+            <div id="logo-container">
+                <a href=#background><img id="logo" src="images/logo.png"></a>
+            </div>
+            <div class="menubar">
+                <img id="menuBar" src="images/menu bar.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li>/</li>
+                    <li><a href="#aboutUs">About Us</a></li>
+                    <li>/</li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li>/</li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li>/</li>
+                    <li><a href="#contactUs">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container top-wrapper">
+            <img id="background" src="images/background.jpg">
+            <div id="header-container">
+                <h1 class="left">Work Hard, Play Hard !</h1>
+                <h1 class="right">More Design, More Fun</h1>
+                <h2>Jetro is place when creativity become symphony</h2>
+            </div>
+            <a href="#main"><img id="arrow" src="images/arrow_next.png"></a>
+        </div>
+        <div class="container">
+            <div class="main-wrapper" id="main">
+                <div class="items-wrapper">
+                    <img src="images/painter-palette.png">
+                    <p class="item-title">Creative Design</p>
+                    <p class="item-desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="items-wrapper">
+                    <img src="images/tick.png">
+                    <p class="item-title">Multipurpose</p>
+                    <p class="item-desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="items-wrapper">
+                    <img src="images/sync.png">
+                    <p class="item-title">Up to Date</p>
+                    <p class="item-desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="items-wrapper">
+                    <img src="images/timer.png">
+                    <p class="item-title">Save Your Time</p>
+                    <p class="item-desc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bot-wrapper">
+                <h1>Recent Work</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <div class="flex-wrapper">
+                    <div class="design-wrapper">
+                        <img src="images/contents_img_002.png">
+                        <a href="#character">
+                            <h1>Character Design</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                    <div class="design-wrapper">
+                        <img src="images/contents_img_005.png">
+                        <a href="#brochure">
+                            <h1>Brochure Design</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                    <div class="design-wrapper">
+                        <img src="images/contents_img_006.png">
+                        <a href="#wordpress">
+                            <h1>Wordpress Theme</h1>
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="testi-wrapper">
+                <h1>What our clients say about us</h1>
+                <h2 class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h2>
+                <h2 class="reviewer">Ridwan Adi, Programmer</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h2>
+            <div class="footer-wrapper">
+                <a href=""> <img src="images/facebook.png"></a>
+                <a href=""> <img src="images/instagram.png"></a>
+                <a href=""> <img src="images/write-email-envelope-button.png"></a>
+                <a href=""> <img src="images/linkedin.png"></a>
+                <a href=""> <img src="images/pinterest.png"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            stickyHeader()
+        };
+
+        var header = document.getElementById("myHeader");
+
+        var sticky = header.offsetTop;
+
+        function stickyHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
